@@ -1,0 +1,18 @@
+{
+  "book_change_bp": 542,
+  "book_size": 10000,
+  "max_change_bp": 1319,
+  "min_change_bp": 0,
+  "p50_change_bp": 588,
+  "p95_change_bp": 1319,
+  "pct_policies_decreased_bp": 0,
+  "pct_policies_increased_bp": 5618,
+  "pct_policies_unchanged_bp": 4382,
+  "scenario": {
+    "territory/T3": 1350,
+    "tier/NONSTANDARD": 1550
+  },
+  "seed": 20260824,
+  "total_new_cents": 1255156116,
+  "total_old_cents": 1190661147
+}
