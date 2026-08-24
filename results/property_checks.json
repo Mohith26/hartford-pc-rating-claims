@@ -1,0 +1,19 @@
+{
+  "bi": {
+    "cases": 100000,
+    "seed": 424243,
+    "violations": 0
+  },
+  "coinsurance": {
+    "cases": 100000,
+    "seed": 424244,
+    "violations": 0
+  },
+  "collision": {
+    "cases": 100000,
+    "seed": 424242,
+    "violations": 0
+  },
+  "total_cases": 300000,
+  "total_violations": 0
+}
