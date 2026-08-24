@@ -1,0 +1,17 @@
+{
+  "machine": "arm64",
+  "note": "single thread, best of 3 passes, wall clock",
+  "python": "3.9.6",
+  "quotes": {
+    "best_seconds": 0.439938209,
+    "checksum_total_cents": 2362804194,
+    "n": 20000,
+    "quotes_per_sec": 45460.929718882406
+  },
+  "settlements": {
+    "best_seconds": 0.07071408400000001,
+    "checksum_total_cents": 250772369679,
+    "n": 100000,
+    "settlements_per_sec": 1414145.4480270152
+  }
+}
