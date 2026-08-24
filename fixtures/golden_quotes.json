@@ -1,0 +1,35 @@
+{
+  "comment": "Hand computed golden quotes against the default tables. Every value was worked out on paper with the documented chain: base, x territory, x class, x tier, x option, rounding half up to a cent after each multiplication. Amounts are integer cents.",
+  "quotes": [
+    {
+      "name": "T2 youth standard, full coverage",
+      "territory": "T2",
+      "driver_class": "YOUTH",
+      "tier": "STANDARD",
+      "coverages": {"BI": "50/100", "PD": "50", "COLL": "500", "COMP": "500", "RENT": "30/900"},
+      "expected_coverage_cents": {"BI": 49843, "PD": 29568, "COLL": 52800, "COMP": 21120, "RENT": 5280},
+      "expected_total_cents": 158611,
+      "bi_intermediates": [24000, 26400, 42240, 42240, 49843]
+    },
+    {
+      "name": "T1 adult preferred, liability plus collision",
+      "territory": "T1",
+      "driver_class": "ADULT",
+      "tier": "PREFERRED",
+      "coverages": {"BI": "100/300", "PD": "25", "COLL": "1000"},
+      "expected_coverage_cents": {"BI": 26163, "PD": 12113, "COLL": 19865},
+      "expected_total_cents": 58141,
+      "bi_intermediates": [24000, 22800, 22800, 19380, 26163]
+    },
+    {
+      "name": "T3 senior nonstandard, max options",
+      "territory": "T3",
+      "driver_class": "SENIOR",
+      "tier": "NONSTANDARD",
+      "coverages": {"BI": "250/500", "PD": "100", "COLL": "250", "COMP": "250", "RENT": "50/1500"},
+      "expected_coverage_cents": {"BI": 70815, "PD": 35814, "COLL": 72795, "COMP": 26788, "RENT": 8152},
+      "expected_total_cents": 214364,
+      "bi_intermediates": [24000, 30600, 32130, 46589, 70815]
+    }
+  ]
+}
