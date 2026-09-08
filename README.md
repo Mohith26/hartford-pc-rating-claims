@@ -53,17 +53,7 @@ cap. Second, randomized sweeps: 100,000 seeded random cases per settlement
 type (300,000 total) with zero invariant violations. The sweep numbers in
 `results/property_checks.json` come from the same code the tests run.
 
-## The re-rate tool
-
-`python -m policyforge.rerate` builds a seeded 10,000 policy synthetic book,
-rates it under the current tables and under a revised set (the default
-scenario bumps territory T3 from 1.275 to 1.350 and the nonstandard tier from
-1.450 to 1.550), and reports the premium change distribution in basis points.
-On the committed scenario: median policy change +588 bp, 95th percentile
-+1319 bp, 56.2 percent of policies increased, book level premium +542 bp.
-Same seed, same numbers, every run.
-
-## Running it
+## Reproducing the numbers
 
 ```
 python3 -m venv .venv && .venv/bin/pip install -U pip pytest pytest-cov
@@ -76,7 +66,17 @@ python3 -m venv .venv && .venv/bin/pip install -U pip pytest pytest-cov
 Measured numbers and exact reproduce commands live in `RESULTS.md` and the
 `results/` folder.
 
-## Limitations
+## The re-rate tool
+
+`python -m policyforge.rerate` builds a seeded 10,000 policy synthetic book,
+rates it under the current tables and under a revised set (the default
+scenario bumps territory T3 from 1.275 to 1.350 and the nonstandard tier from
+1.450 to 1.550), and reports the premium change distribution in basis points.
+On the committed scenario: median policy change +588 bp, 95th percentile
++1319 bp, 56.2 percent of policies increased, book level premium +542 bp.
+Same seed, same numbers, every run.
+
+## What this does not model
 
 The rate tables are invented. I picked numbers that look plausible for a six
 month personal auto term, but they are not filed rates from any insurer or
